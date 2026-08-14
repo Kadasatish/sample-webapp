@@ -28,3 +28,6 @@ auth.signInAnonymously()
   .catch((error) => {
     console.error("Firebase Error:", error);
   });
+function openPage(page) {
+  window.location.href = page;
+}
