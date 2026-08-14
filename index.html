@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Firebase Web App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <title>Vasavi Security</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>Hello from Firebase!</h1>
-  <p>Connecting to Firebase...</p>
+  <header class="topbar">
+    <h1>Vasavi Security</h1>
+  </header>
 
-  <script src="script.js"></script>
+  <main class="app">
+
+    <section class="welcome">
+      <h2>Security Management System</h2>
+      <p>Welcome to Vasavi Security</p>
+    </section>
+
+    <section class="menu">
+
+      <button onclick="openPage('user.html')">
+        User
+      </button>
+
+      <button onclick="openPage('guard.html')">
+        Guard
+      </button>
+
+      <button onclick="openPage('admin.html')">
+        Admin
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
 
 </body>
 </html>
