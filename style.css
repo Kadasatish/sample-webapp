@@ -1,13 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+  min-height: 100vh;
+}
+
+.topbar {
+  background: #111827;
+  color: white;
+  padding: 18px 16px;
   text-align: center;
-  padding: 50px;
 }
 
-h1 {
-  font-size: 32px;
+.topbar h1 {
+  font-size: 24px;
 }
 
-p {
+.app {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 25px 16px;
+}
+
+.welcome {
+  background: white;
+  border-radius: 14px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.welcome h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #666;
+}
+
+.menu {
+  display: grid;
+  gap: 14px;
+  margin-top: 25px;
+}
+
+.menu button {
+  width: 100%;
+  padding: 17px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
   font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu button:active {
+  transform: scale(0.98);
 }
